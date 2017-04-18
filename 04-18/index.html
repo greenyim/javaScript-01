@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Hello world </title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <script type="text/javascript" src="app.js">
+  // <h1>This is h1.</h1>
+  // <p>Sentence.</p>
+  // <button onclick="brown()"> h1 </button>
+  // <button onclick="orange()"> p </button>
+
+  function right(){
+  document.getElementById('redBox').style.left=parseInt(document.getElementById('redBox').style.left)-10+'px';
+  }
+  function left(){
+  document.getElementById('redBox').style.left=parseInt(document.getElementById('redBox').style.left)+10+'px';
+  }
+  function top(){
+  document.getElementById('redBox').style.top=parseInt(document.getElementById('redBox').style.top)+10+'px';
+  }
+  function down(){
+  document.getElementById('redBox').style.top=parseInt(document.getElementById('redBox').style.top)-10+'px';
+  }
+
+  </script>
+  <div id = "redBox" onclick="background()"></div>
+
+  <button onclick="left()"> left </button>
+  <button onclick="right()"> right </button>
+  <button onclick="top()"> up </button>
+  <button onclick="down()"> down </button>
+
+
+<!-- <button onclick="greeting()"> button </button> -->
+</body>
+</html>
